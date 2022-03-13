@@ -1,0 +1,172 @@
+/* selector {
+  key: value;
+    OR
+  property: value;
+  color:blue;
+} */
+
+
+
+/*Don't Repeat yourself
+ h1 {
+  color: green;
+}
+h2{
+  color: green;
+}
+
+id selector starts with #
+#top{
+  color: green;
+  font-size: 350px
+}
+
+class selector applying a specific attribute to multiple
+in html example <p class="green">
+you can use hex to reference colors
+
+.green{
+  color:
+}
+
+ */
+#top{
+  font-size: 200px;
+  animation: beat 1s infinite;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  font-family: 'Nosifer', cursive;
+}
+
+@keyframes beat {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+h2 {
+  font-size: 100px;
+  color: yellow;
+  text-align: center;
+}
+
+body{
+  background-color: black;
+  background-image: url(https://images.unsplash.com/photo-1514471244491-6fb96fcdf04f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2NpJTIwZmklMjBkZXNlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  font-size: 50px;
+  font-family: 'Smooch Sans', sans-serif;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: yellow;
+}
+.instruct{
+  border: 10px solid yellow;
+  background: black;
+  display: inline-block;
+}
+/* body {
+  background-color: navy;
+  font-family: 'Roboto', sans-serif;
+} */
+
+/* button {
+  color: yellow;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  background-color: black;
+} */
+
+button {
+  color: black;
+  font-size: 48px;
+  text-align: justify;
+  border: 4.5 yellow;
+  border-radius: 5px;
+  background-color: yellow;
+  font-family: 'Smooch Sans', sans-serif;
+}
+button:hover {
+  color: yellow;
+  background: black;
+}
+
+.buggy {
+  display: flex;
+  justify-content: center;
+}
+img {
+animation: spider 7s ease 0s infinite normal forwards;
+  width: 350px;
+  border-radius: 75%;
+}
+
+@keyframes spider {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(200px);
+  }
+
+  40% {
+    transform: translate(400px);
+  }
+
+  60% {
+    transform: translate(100px);
+  }
+
+  80% {
+    transform: translate(-200px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+td:hover{
+  animation: beat 1s infinite;
+}
+
+tr, td {
+  border: 10px solid yellow;
+  padding: 50px;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+}
+
+
+
+#gameboard{
+  display: flex;
+  justify-content: center;
+}

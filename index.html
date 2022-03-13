@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<!-- HEADER -->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Brain Bug Hunt</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.pixabay.com/photo/2016/03/31/21/59/bug-1296767_1280.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Wallpoet&display=swap" rel="stylesheet">
+
+  </head>
+
+<!-- BODY -->
+
+  <body >
+    <h1 id="top">Bug Hunt</h1>
+    <h2>Find the brain bug, avoid the arachnid</h2>
+  <div class="instruct">
+      <p>Click the squares to discover what is underneath</p>
+      <p>Find the brain bug</p>
+      <p>Avoid the arachnid</p>
+      <p>You have five attempts to find brain bug</p>
+  </div>
+<br>
+<br>
+  <div class="buggy">
+      <img id="bugpic" src="https://cdn.pixabay.com/photo/2017/05/30/20/54/spider-2358160_1280.jpg">
+  </div>
+<br>
+<br>
+
+<!-- TABLE -->
+  <div id="gameboard">
+    <table class="center">
+      <tr>
+        <td id=0 onclick="bughunt(0,brainBug,arachnid)"> ? </td>
+        <td id=1 onclick="bughunt(1,brainBug,arachnid)"> ? </td>
+        <td id=2 onclick="bughunt(2,brainBug,arachnid)"> ? </td>
+      </tr>
+      <tr>
+        <td id=3 onclick="bughunt(3,brainBug,arachnid)"> ? </td>
+        <td id=4 onclick="bughunt(4,brainBug,arachnid)"> ? </td>
+        <td id=5 onclick="bughunt(5,brainBug,arachnid)"> ? </td>
+      </tr>
+      <tr>
+        <td id=6 onclick="bughunt(6,brainBug,arachnid)"> ? </td>
+        <td id=7 onclick="bughunt(7,brainBug,arachnid)"> ? </td>
+        <td id=8 onclick="bughunt(8,brainBug,arachnid)"> ? </td>
+      </tr>
+    </table>
+  </div>
+<br>
+<br>
+    <button type="button" onclick="location.reload()">Try Again</button>
+<br>
+<br>
+
+<div id="counter">o</div>
+<!-- <button id="reset">reset</button> -->
+
+<!-- FOOTER -->
+
+    <footer>&copy Van Dexter, Zane, and Don | Treasure Hunt Exercise |
+      <a href="#top">Back to Top | </a>
+      <a href="https://en.wikipedia.org/wiki/Starship_Troopers_(film)" target="_blank">I'm doing my part </a>
+    </footer>
+    <script type="text/javascript" src="bughunt.js"></script>
+    <script type="text/javascript" src="counter.js"></script>
+  </body>
+</html>
